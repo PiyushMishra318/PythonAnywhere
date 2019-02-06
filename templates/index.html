@@ -4,29 +4,27 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="static/brand.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="static/master.css">
+    <link rel="stylesheet" href="static/navstyle.css">
     <title>Piyush Mishra - Portfolio</title>
   </head>
-  <body onload="myFunction()" style="margin:0;">
-    <div class="container" id="loader">
-      <div class="wrapper">
-        <div class="loader-3 center"><span></span></div>
-      </div>
-    </div>
-    <div style="display:none;" id="myDiv">
-      <nav class="navbar navbar-expand-md  navbar-dark bg-set" id="navbar">
-        <!-- Brand -->
-        <a class="brand" href="index.html"><img src="static/brandimg.png" alt="" href="index.html" height=50 width=80></a>
-        <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <body >  
+    <div>
 
-        <!-- Navbar links -->
-        <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item" id="homepage">
+
+    <nav class="navbar navpos navbar-expand-lg navbar-dark bg-set" id="navbar">
+  <img src="static/brandimg.png" height="50px" width="80px">&nbsp;&nbsp;
+  <a class="navbar-brand navfont" href="#">PIYUSH MISHRA</a>
+  <button class="navbar-toggler navbar-toggler-right navbutton" type="button" data-toggle="modal" data-backdrop="false" data-target="#sidenav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item" id="homepage">
               <a class="nav-link" >Home</a>
             </li>
             <li class="nav-item" id="aboutus">
@@ -38,9 +36,28 @@
             <li class="nav-item" id="contact">
               <a class="nav-link">Get in Touch</a>
             </li>
-          </ul>
-        </div>
-      </nav>
+    </ul>
+  </div></nav>
+
+  <div class="sidenav bg-faded p-4" id="sidenav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#" data-toggle="modal" data-backdrop="false" data-target="#sidenav"><i class="fa fa-window-close" style="font-size:24px ; color:white;"></i></a>
+        </li>
+        <li class="nav-item active" id="homepage1">
+              <a class="nav-link" >Home</a>
+            </li>
+            <li class="nav-item" id="aboutus1">
+              <a class="nav-link" >About Me</a>
+            </li>
+            <li class="nav-item" id="services1">
+              <a class="nav-link" >My Work</a>
+            </li>
+            <li class="nav-item" id="contact1">
+              <a class="nav-link">Get in Touch</a>
+            </li>
+      </ul>
+    </div>
       <div class="homepage">
         <div class="text-*-center" id="center">
           <h1>Piyush Mishra</h1>
@@ -49,16 +66,16 @@
         <div class ="text-centered1">
             <div class="row">
               <div class="col-xs-2">
-                <a href="https://www.facebook.com/piyush.mishra.3154?ref=br_rs"><img src="static/fb.png" style="width:50px;height:50px"></a>
+                <a href="https://www.facebook.com/piyush.mishra.3154?ref=br_rs" target="_blank"><img src="static/fb.png" style="width:50px;height:50px"></a>
               </div>
               <div class="col-xs-2">
-                <a href="https://twitter.com/PiyushM3108"><img src="static/twitter.png" style="width:50px;height:50px"></a>
+                <a href="https://twitter.com/PiyushM3108" target="_blank"><img src="static/twitter.png" style="width:50px;height:50px"></a>
               </div>
               <div class="col-xs-2">
-                <a href="https://www.instagram.com/piyush_mishra.kh.3108/?hl=en"><img src="static/instagram.gif" style="width:50px;height:50px"></a>
+                <a href="https://www.instagram.com/piyush_mishra.kh.3108/?hl=en" target="_blank"><img src="static/instagram.gif" style="width:50px;height:50px"></a>
               </div>
               <div class="col-xs-2">
-                <a href="https://github.com/PiyushMishra318"><img src="static/github.png" style="width:50px;height:50px"></a>
+                <a href="https://github.com/PiyushMishra318" target="_blank"><img src="static/github.png" style="width:50px;height:50px"></a>
               </div>
             </div>
         </div>
@@ -84,48 +101,33 @@
           </div>
         </div>
       </div>
-      <div class="container" id="section3">
+      <div class="container1" id="section3">
         <div class="text-center" style="color:white;">
           <h1>My Work</h1>
         </div>
-        <br>
-        <br>
-        <div class="row">
-          <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6" >
-            <div class="container">
-              <div class="content">
-                <a href="https://github.com/PiyushMishra318/Django/tree/master/Blog" target="_blank">
-                  <div class="content-overlay"></div>
-                  <img class="content-image" src="static/Blogimg.png">
-                  <br>
-                  <div class="content-details fadeIn-top">
-                    <h3>A Simple Blog.</h3>
-                    <p>This website is a working sample blog made using Django with all neccessary features.</p>
-                  </div>
-                </a>
-                <br>
-                <br>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
-            <div class="container">
-              <div class="content">
-                <a href="https://github.com/PiyushMishra318/Django/tree/master/piyush" target="_blank">
-                  <div class="content-overlay"></div>
-                  <img class="content-image" src="static/Profileimg.png">
-                  <div class="content-details fadeIn-top">
-                    <h3>Profile Search</h3>
-                    <p>A website which helps the superuser search a profile information by entering the profile name in the search bar.</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <br>
-      <br>
+        <div class="container">
+			  <div class="box">
+			    <div class="widget">
+			      <a href="http://www.rkintl.in" target="_blank"><div class="text-1">
+              <p>RK-International</p>
+			        <p>Industrial Website</p>
+			      </div></a>
+			      <div class="text-2">
+			        <p>Space Shooter</p>
+			        <p>HTML(CANVAS)-Javascript Game</p>
+			      </div>
+			      <div class="text-3">
+			        <p>Django-Blog(github)</p>
+			        <p>A Simple Blog(no-frontend yet)</p>
+			      </div>
+			      <div class="text-4">
+			        <p>Search App</p>
+			        <p>A Profile-Search App</p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
       <div class="contactform">
         <div class="form-block">
           <h1 style="text-align:center">Contact Form</h1>
@@ -158,20 +160,9 @@
           <img src="static/scroll.png" height="50px" width="50px">
         </div>
       </div>
-    </div>
-    <script type="text/javascript">
-    var myVar;
-    function myFunction() {
-        myVar = setTimeout(showPage, 5000);
-    }
-    function showPage() {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("myDiv").style.display = "block";
-    }
-    </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-            crossorigin="anonymous"></script>
+    </div> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="static/javascript.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

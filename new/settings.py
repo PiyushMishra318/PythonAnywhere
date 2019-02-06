@@ -27,7 +27,7 @@ SECRET_KEY = 'w91r@a)u-1h0oo@-&@-7pd*n1$7@ze_-_p(3h_%!^+s)l#@sy='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -120,7 +120,7 @@ USE_TZ = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'piyush9873046191@gmail.com'
-EMAIL_HOST_PASSWORD = 'xenoverse'
+EMAIL_HOST_PASSWORD = 'mqawthzwpmdiaydx'
 EMAIL_USE_TLS = True
 
 

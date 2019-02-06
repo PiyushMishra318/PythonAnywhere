@@ -4,12 +4,7 @@
 }
 
 
-body{
-	background: linear-gradient(to right,#19cbfb,#2aef56 );
-	height: 630px;
-	width: auto;
-	overflow-y: hidden;
-}
+
 #main{
 	height: 600px;
 	width: 900px;
